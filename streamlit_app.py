@@ -24,3 +24,8 @@ if my_dataframe:
             st.success('Someone clicked the button', icon = '👍') 
         except:
             st.write('Something went wrong.')
+
+
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
